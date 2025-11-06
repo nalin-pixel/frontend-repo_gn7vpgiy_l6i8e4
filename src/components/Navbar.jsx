@@ -6,7 +6,7 @@ const whatsappLink =
 
 export default function Navbar() {
   return (
-    <header className="w-full sticky top-0 z-50 bg-white/80 backdrop-blur border-b border-slate-200">
+    <header className="w-full sticky top-0 z-50 bg-white/70 backdrop-blur border-b border-slate-200">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 py-3 flex items-center justify-between">
         <a href="#home" className="flex items-center gap-2">
           <Logo />
@@ -17,7 +17,6 @@ export default function Navbar() {
         </a>
         <nav className="hidden md:flex items-center gap-6 text-sm text-slate-700">
           <a href="#services" className="hover:text-slate-900">Services</a>
-          <a href="#about" className="hover:text-slate-900">About</a>
           <a href="#contact" className="hover:text-slate-900">Contact</a>
         </nav>
         <div className="flex items-center gap-2">
@@ -25,17 +24,17 @@ export default function Navbar() {
             href={whatsappLink}
             target="_blank"
             rel="noreferrer noopener"
-            className="inline-flex items-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white text-sm font-medium px-3 py-2 rounded-md shadow-sm"
+            className="inline-flex items-center gap-2 border border-slate-300 hover:border-slate-400 text-slate-800 text-sm font-medium px-3 py-2 rounded-md"
           >
             <MessageCircle size={18} />
-            Book on WhatsApp
+            WhatsApp
           </a>
           <a
             href="#contact"
-            className="hidden sm:inline-flex items-center gap-2 text-emerald-700 hover:text-emerald-800 font-medium px-3 py-2"
+            className="hidden sm:inline-flex items-center gap-2 text-slate-700 hover:text-slate-900 font-medium px-3 py-2"
           >
             <Phone size={18} />
-            07508 519328
+            +447508519328
           </a>
         </div>
       </div>
@@ -45,20 +44,10 @@ export default function Navbar() {
 
 function Logo() {
   return (
-    <div className="flex items-center justify-center w-10 h-10 rounded-md bg-gradient-to-br from-emerald-500 to-sky-600 text-white">
-      {/* Simple cross-heart mark */}
-      <svg viewBox="0 0 24 24" className="w-6 h-6" aria-hidden="true">
-        <path
-          d="M12 21s-7-4.35-7-10a5 5 0 0 1 9-3 5 5 0 0 1 9 3c0 5.65-7 10-7 10s-2-1.25-4-0z"
-          fill="currentColor"
-          fillOpacity="0.2"
-        />
-        <path
-          d="M12 7v10M7 12h10"
-          stroke="currentColor"
-          strokeWidth="1.8"
-          strokeLinecap="round"
-        />
+    <div className="flex items-center justify-center w-9 h-9 rounded-md border border-slate-200 text-slate-900">
+      {/* Minimal cross icon */}
+      <svg viewBox="0 0 24 24" className="w-5 h-5" aria-hidden="true">
+        <path d="M12 6v12M6 12h12" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" />
       </svg>
     </div>
   );
