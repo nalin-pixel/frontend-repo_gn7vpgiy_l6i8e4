@@ -8,13 +8,14 @@ export default function Footer() {
           <p className="mt-3 text-sm">70 Spackmans Way, Slough, SL1 2SB, UK</p>
         </div>
         <div className="text-sm space-y-2">
-          <p><a href="#services" className="hover:text-slate-900">Services</a></p>
-          <p><a href="#contact" className="hover:text-slate-900">Contact</a></p>
-          <p><a href="#home" className="hover:text-slate-900">Back to top</a></p>
+          <p><a href="/about" className="hover:text-slate-900">About</a></p>
+          <p><a href="/team" className="hover:text-slate-900">Team</a></p>
+          <p><a href="/testimonials" className="hover:text-slate-900">Testimonials</a></p>
+          <p><a href="/privacy" className="hover:text-slate-900">Privacy Policy</a> • <a href="/terms" className="hover:text-slate-900">Terms</a></p>
         </div>
         <div className="text-sm space-y-2">
           <p>© {new Date().getFullYear()} FANIABELLA LTD. All rights reserved.</p>
-          <p><a href="#" className="hover:text-slate-900">Privacy Policy</a> • <a href="#" className="hover:text-slate-900">Terms</a></p>
+          <p><a href="/#home" className="hover:text-slate-900">Back to top</a></p>
         </div>
       </div>
     </footer>
